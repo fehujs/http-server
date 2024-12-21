@@ -1,0 +1,47 @@
+{
+  "name": "@fehujs/http-server",
+  "version": "0.1.0",
+  "description": "HTTP server for fehujs projects",
+  "main": "build/index.js",
+  "type": "module",
+  "files": [
+    "./build/**/*",
+    "README.md",
+    "LICENCE"
+  ],
+  "exports": {
+    ".": "./build/index.js"
+  },
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "build:types": "tsc -d --declarationDir build --declarationMap --emitDeclarationOnly",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fehujs/http-server.git"
+  },
+  "keywords": [
+    "http",
+    "server"
+  ],
+  "author": "Pascal LLeonart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fehujs/http-server/issues"
+  },
+  "homepage": "https://github.com/fehujs/http-server#readme",
+  "devDependencies": {
+    "@fehujs/build": "^0.1.1",
+    "@fehujs/tsconfig": "^1.0.0",
+    "@types/formidable": "^3.4.5",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@fehujs/ioc": "^1.0.2",
+    "@fehujs/template-parser": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "formidable": "^3.5.2"
+  }
+}
