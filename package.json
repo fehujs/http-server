@@ -1,6 +1,6 @@
 {
   "name": "@fehujs/http-server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "HTTP server for fehujs projects",
   "main": "build/index.js",
   "type": "module",
@@ -15,6 +15,7 @@
   "scripts": {
     "build": "node scripts/build.cjs",
     "build:types": "tsc -d --declarationDir build --declarationMap --emitDeclarationOnly",
+    "release": "pnpm build && pnpm build:types",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
