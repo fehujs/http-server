@@ -3,6 +3,7 @@ export { ErrorsController } from "./helpers/errors-controller"
 export { parseBase, parseCookieData } from "./helpers/parsing"
 
 export { CookieHandler } from "./lib/cookie-handler"
+export { Middleware } from "./lib/middleware"
 export { Request } from "./lib/request"
 export { Response } from "./lib/response"
 
