@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fehujs/helpers':
+        specifier: ^0.1.1
+        version: 0.1.1
       '@fehujs/ioc':
         specifier: ^1.0.2
         version: 1.0.2
@@ -192,6 +195,9 @@ packages:
   '@fehujs/build@0.1.1':
     resolution: {integrity: sha512-DzV5kWKJGU4qqQKXxTDEaLWx4fPiPlmeH5AtzwD2xUVx9QNuY0vy9tYSm7ZHoLzXO1o/8C72js0PGy8XY2Tyrw==}
 
+  '@fehujs/helpers@0.1.1':
+    resolution: {integrity: sha512-0IMsTTiULhiEqUF4sxT0GcHWkwAZV7AO2X5S3DCXs097YBKxQ6rcPjfDfZaiFXnmhFPGyaOj+/TQrtFjzReVDw==}
+
   '@fehujs/ioc@1.0.2':
     resolution: {integrity: sha512-BTyI4Vpm53Ph9kxoqughCh4M615YlQ6sVPmHgPpz38BwZP1km3QEs6b8ehCRpUxaGfCzLB4YQVXfMrXzLfGxGQ==}
 
@@ -200,6 +206,13 @@ packages:
 
   '@fehujs/tsconfig@1.0.0':
     resolution: {integrity: sha512-7GIKqf6Gslo8xbdXJmhOqHvt3bDnNx1iORkKBsbgy7qygRuoBxTVRarwYEY9ZIlmHlF9MjocVMmuV89BStVXww==}
+
+  '@noble/hashes@1.6.1':
+    resolution: {integrity: sha512-pq5D8h10hHBjyqX+cfBm0i8JUXJ0UhczFc4r74zbuT9XgewFo2E3J1cOaGtdZynILNmQ685YWGzGE1Zv6io50w==}
+    engines: {node: ^14.21.3 || >=16}
+
+  '@paralleldrive/cuid2@2.2.2':
+    resolution: {integrity: sha512-ZOBkgDwEdoYVlSeRbYYXs0S9MejQofiVYoTbKzy/6GQa39/q5tQU2IX46+shYnUkpEl3wc+J6wRlar7r2EK2xA==}
 
   '@types/formidable@3.4.5':
     resolution: {integrity: sha512-s7YPsNVfnsng5L8sKnG/Gbb2tiwwJTY1conOkJzTMRvJAlLFW1nEua+ADsJQu8N1c0oTHx9+d5nqg10WuT9gHQ==}
@@ -327,6 +340,10 @@ snapshots:
     dependencies:
       esbuild: 0.24.2
 
+  '@fehujs/helpers@0.1.1':
+    dependencies:
+      '@paralleldrive/cuid2': 2.2.2
+
   '@fehujs/ioc@1.0.2':
     dependencies:
       '@fehujs/build': 0.1.1
@@ -335,6 +352,12 @@ snapshots:
   '@fehujs/template-parser@1.0.0': {}
 
   '@fehujs/tsconfig@1.0.0': {}
+
+  '@noble/hashes@1.6.1': {}
+
+  '@paralleldrive/cuid2@2.2.2':
+    dependencies:
+      '@noble/hashes': 1.6.1
 
   '@types/formidable@3.4.5':
     dependencies:

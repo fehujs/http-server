@@ -1,4 +1,5 @@
-import { parseCookieData } from "../helpers/parsing"
+import { parseCookieData } from "@fehujs/helpers"
+
 import { Request } from "./request"
 import { Response } from "./response"
 import { Cookie } from "../types"

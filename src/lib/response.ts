@@ -1,4 +1,5 @@
 import { type Context, render } from "@fehujs/template-parser"
+
 import { existsSync } from "node:fs"
 import type { ResponseBody, ResponseContext, Headers } from "../types"
 
