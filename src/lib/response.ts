@@ -95,7 +95,7 @@ export class Response {
         this.#headers = headers
     }
 
-    public setHeader(headerName: string, value: string) {
+    public setHeader(headerName: string, value: string | string[]) {
         this.#headers[headerName] = value
     }
 

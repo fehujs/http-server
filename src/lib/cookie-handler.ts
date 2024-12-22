@@ -65,7 +65,15 @@ export class CookieHandler {
             cookieHeader += `; SameSite=${cookie.sameSite}`
         }
 
-        response.setHeader('Set-Cookie', cookieHeader)
+        if (response.header("Set-Cookie")) {
+            const resCookies: string[] = Array.isArray(response.header("Set-Cookie"))
+                ? response.header("Set-Cookie")! as string[]
+                : [response.header("Set-Cookie")!] as string[]
+            
+            resCookies.push(cookieHeader)
+
+            response.setHeader("Set-Cookie", resCookies)
+        } else response.setHeader("Set-Cookie", cookieHeader)
 
         return response
     }
