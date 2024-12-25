@@ -1,6 +1,6 @@
 {
   "name": "@fehujs/http-server",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "HTTP server for fehujs projects",
   "main": "build/index.js",
   "type": "module",
@@ -40,8 +40,8 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@fehujs/helpers": "^0.1.1",
-    "@fehujs/ioc": "^1.0.5",
+    "@fehujs/helpers": "^0.1.2",
+    "@fehujs/ioc": "^1.0.6",
     "@fehujs/template-parser": "^1.0.0",
     "dotenv": "^16.4.7",
     "formidable": "^3.5.2"

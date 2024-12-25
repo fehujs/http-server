@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@fehujs/helpers':
-        specifier: ^0.1.1
-        version: 0.1.1
+        specifier: ^0.1.2
+        version: 0.1.2
       '@fehujs/ioc':
-        specifier: ^1.0.5
-        version: 1.0.5
+        specifier: ^1.0.6
+        version: 1.0.6
       '@fehujs/template-parser':
         specifier: ^1.0.0
         version: 1.0.0
@@ -195,11 +195,11 @@ packages:
   '@fehujs/build@0.2.0':
     resolution: {integrity: sha512-5eRH3gmjOvRm7FpKgF+UAehxSSbQ60fP2fwuAqY3fzOJIbg9cPbe7pTMi4dX2POYaQyFPdTTznYvxn5IJyjNxg==}
 
-  '@fehujs/helpers@0.1.1':
-    resolution: {integrity: sha512-0IMsTTiULhiEqUF4sxT0GcHWkwAZV7AO2X5S3DCXs097YBKxQ6rcPjfDfZaiFXnmhFPGyaOj+/TQrtFjzReVDw==}
+  '@fehujs/helpers@0.1.2':
+    resolution: {integrity: sha512-s6O/NKUuxjK7JP8igrODmZssQLeybp/kY2vgxregvKAzdpEBscYQQ5nWCBHRzESmxrJNK2K93dMUvDrprOsU3A==}
 
-  '@fehujs/ioc@1.0.5':
-    resolution: {integrity: sha512-jcnkRZh654OSsRHhlkdDqBj3grxSqZpgdebQ4VBI69WQQFHJmJcKW8qwcwDZ/2b3AbsGWZsiD1sAVjDcTtzrJw==}
+  '@fehujs/ioc@1.0.6':
+    resolution: {integrity: sha512-ZUdyuzK6/5vhTarY5qR8/+nLbgL3ucFS+rPuZBOYZFSmOmKah6zVlJo+1xssKypWwyzXkJ9GmCriGR1d0Pbttg==}
 
   '@fehujs/template-parser@1.0.0':
     resolution: {integrity: sha512-+XzVD07l+ALb4iK/fwAfhX58p6WX24H8NNY6Jkh7epT1MifPebgzcHW3uhP7bpy8AbFxz8rntqZkPx2S0gOdxw==}
@@ -340,11 +340,11 @@ snapshots:
     dependencies:
       esbuild: 0.24.2
 
-  '@fehujs/helpers@0.1.1':
+  '@fehujs/helpers@0.1.2':
     dependencies:
       '@paralleldrive/cuid2': 2.2.2
 
-  '@fehujs/ioc@1.0.5':
+  '@fehujs/ioc@1.0.6':
     dependencies:
       reflect-metadata: 0.2.2
 
