@@ -1,3 +1,5 @@
+export { CONFIG } from "./config"
+
 export { setAssetsRoutes } from "./helpers/assets"
 export { ErrorsController } from "./helpers/errors-controller"
 

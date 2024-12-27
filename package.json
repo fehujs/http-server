@@ -1,6 +1,6 @@
 {
   "name": "@fehujs/http-server",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "HTTP server for fehujs projects",
   "main": "build/index.js",
   "type": "module",

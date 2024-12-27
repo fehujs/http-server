@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises"
 
 import { BaseController } from "@fehujs/ioc"
 
-import { env } from "../env"
+import { CONFIG } from "../config"
 import { HttpContext } from "../types"
 
 
@@ -41,7 +41,7 @@ export class ErrorsController extends BaseController {
     }
     
     public async serverError({ response }: HttpContext, options: { name: string, message: string, stack: string }) {
-        const template = env.NODE_ENV === "dev" || env.NODE_ENV === "test"
+        const template = CONFIG.NODE_ENV === "dev" || CONFIG.NODE_ENV === "test"
             ? `<h3>500: Internal server error</h3><pre>name: ${options.name}<br>msg: ${options.message}<br>stack: ${options.stack}</pre>`
             : "<h3>500: Internal server error</h3>"
 
