@@ -27,7 +27,6 @@ try {
     console.log(`[http-server] config: config file not found, applying default config.`)
     _config = {
         port: 3000,
-        globalMiddlewares: [],
         form: {
             formOptions: {
                 encoding: "utf-8",
